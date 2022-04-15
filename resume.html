@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <title>Resume</title>   
+    <style>
+
+        :root{
+            --color-fondo : rgb(238, 237, 236);
+            --color-back1:rgb(93,107,153);
+            --color-back2:rgb(60,80,141);
+            --color-back3:rgb(60,60,60);
+            --color-back4:rgba(60,60,60,.1);
+
+            --color-borde:rgb(93,107,153);
+
+            --color-1:rgb(93,107,153);
+            --color-fuente1:rgb(3, 14, 51);
+            --color-fuente2:rgb(238, 239, 241);
+            --color-fuente2:white;
+            --color-fuente3:rgb(43, 145, 175);
+            --color-fuente4:rgb(143,8,196);
+
+        }
+
+        body{
+            color: var(--color-fuente1);
+            font-size: 1rem;
+            font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,sans-serif, 'Courier New', Courier, monospace;
+            xfont-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .back-1{
+            background-color: var(--color-fondo);
+        }
+        .grilla{
+            display: grid;
+            grid-template-columns: 360px 1fr;
+            grid-template-rows: 120px 20px 1fr 30px;
+        }
+        .grilla > div{
+            padding: 1rem;
+            xborder-right:4px solid var(--color-borde);
+        }
+        .tituloa{
+            grid-column-start: 1;
+            grid-column-end:3 ;
+            color: var(--color-fuente2);       
+            background-color:var(--color-back3);
+            font-size: 2.4rem;
+
+        }
+        .titulob{
+            grid-column-start: 1;
+            grid-column-end:3 ;
+            color: var(--color-fuente2);       
+            background-color:var(--color-back2);
+
+        }
+        .col-izq{
+            
+            color: var(--color-fuente2);       
+            background-color:var(--color-back1);
+        }
+        .col-der{
+            
+            color: var(--color-fuente1);       
+            background-color:var(--color-fondo);
+        }
+        .foot{
+            grid-column-start: 1;
+            grid-column-end:3 ;
+            
+            line-height: .7rem;
+            font-size: .7rem;
+            color: var(--color-fuente2);       
+            background-color:var(--color-back3);
+
+        }
+
+        progress {
+            -webkit-appearance: none;
+            height: 1rem;
+        }
+
+        ::-webkit-progress-bar {
+            background-color: var(--color-fondo);
+            border-radius: 3px;
+            border: 1px solid var(--color-borde);
+        }
+        ::-webkit-progress-value{
+            border-radius: 2px;
+            background-color: var(--color-fuente1);            
+            
+        }
+        .grilla-2col-a{
+            display: grid; 
+            grid-template-columns: 4fr 5fr;
+            column-gap: .4rem;
+            row-gap: 1.2rem;
+            padding: 2rem 0;
+        }
+        .grilla-2col-b{
+            display: grid; 
+            grid-template-columns: 4fr 5fr;
+            column-gap: .4rem;
+            row-gap: .8rem;            
+        }
+        .cuadro-tec{
+            display: flex;     
+            flex-wrap: wrap;       
+        }
+        .cuadro-tec > div{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: .9rem;
+            background-color: var(--color-back2);            
+            color: var(--color-fuente2);       
+            margin:  .1rem;
+            padding: .4rem;
+        }
+
+        .cuadro-temp{
+            margin: 1.4rem 0;
+            font-size: .8rem;
+            color: var(--color-fuente3);    
+                    
+        }
+        .cuadro-temp  tr:nth-child(2){            
+            color: var(--color-fuente4);
+            
+        }
+        .cuadro-temp td{
+            white-space: nowrap;
+            padding: 0 .3rem;
+            border-bottom: 1px solid silver;
+        }
+        ul{
+            margin: 1.4rem .2rem;
+            list-style-type: none;
+        }
+        ul li {
+            margin: 1rem;
+        }
+        ul li i {
+            font-size: .8rem;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="back-1 grilla"  >
+
+        <div class="tituloa" style="overflow: hidden;">
+            Enzo Torres Gritti         
+            <div style="float: right;font-size: 7rem;color: var(--color-fuente3); ">
+            <div style="transform: skewX(65deg);margin: -2rem 4rem 0 0;">
+               
+            </div>
+                
+            </div>   
+            
+        </div>
+        <div class="titulob">
+            
+        </div>
+        <div class="col-izq">
+
+            <div class="grilla-2col-a" >
+                <div><i class="far fa-envelope"></i></div>
+                <div>enzotg@gmail.com</div>
+                <div><i class="far fa-map"></i></div>
+                <div>Tucumán - Argentina</div>
+                <div><i class="fab fa-github"></i></div>
+                <div>https://www.github.com/enzotg</div>
+                <div><i class="fab fa-linkedin"></i></div>
+                <div>https://linkedin.com/in/enzo-torres-gritti-5491a122a</div>
+
+            </div>
+            <div style="height: 200px;"></div>
+
+            <div class="grilla-2col-a" >
+                <h3>Skills</h3><div></div>
+                <div>javascript</div>                
+                <progress value="7" max="10" ></progress>
+                <div>css3</div>                
+                <progress value="6" max="10" ></progress>
+                <div>c#</div>                
+                <progress value="9.8" max="10" ></progress>                    
+                
+            </div>
+            <div class="grilla-2col-b">
+                <div>entity framework</div>                
+                <progress value="7" max="10" ></progress>
+                <div>t-sql</div>                
+                <progress value="5" max="10" ></progress>
+                <div>crystal reports</div>                
+                <progress value="9.8" max="10" ></progress>                    
+                <div></div> <div></div>
+            </div>
+            <div class="grilla-2col-a">
+                <div>English</div><div></div>
+                <div>Reading</div>                
+                <progress value="9.5" max="10" ></progress>
+                <div>Talking</div>                
+                <progress value="6" max="10" ></progress>
+                
+            </div>            
+
+        </div>
+        <div class="col-der">            
+            <h2>Experience</h2>
+            <p>
+                Throughout my career I worked in many projects mainly as programmer. I did too functional analysis, data design and system design. I Worked with databases like Progress, SQL Server, SQLite.
+            </p>
+            <p>
+                I can develop web applications: MVC and api REST. For the backend with C#, for the frontend with razor views combined with javascript and css3. For the Windows desktop, I can develop with Winforms and WPF.
+            </p>
+            <p>
+                At the present time I work as developer in Caja de Tucumán since 2000. I worked several times as freelance in various companies.
+            </p>
+            <p> 
+                I developed projects like: 
+                <ul>                                
+                    <li><i class="far fa-file-code"></i>
+                         Accounting administrative system</li>
+                    <li><i class="far fa-file-code"></i>
+                         Administration of human resources</li>
+                    <li><i class="far fa-file-code"></i>
+                         Sales system</li>
+                    <li><i class="far fa-file-code"></i>
+                         Savings funds accounting </li>
+                </ul>
+            </p>
+           
+            <div>
+                <table class="cuadro-temp" >
+                    <tr>
+                        <td>2000</td><td>2003</td><td>2004</td><td>2008</td>   <td>2012</td>                                       <td>2018</td>    <td>2019</td>
+                    </tr>
+                    <tr>
+                        <td>visual basic</td><td>progress 4gl 9</td><td>progress 4gl 10</td><td>c#</td><td>asp.net</td>            <td>net core</td><td>javascript css</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <hr>
+            <div>
+                <p>Some repositories:</p>
+                <p>
+                    <i class="fab fa-css3"></i>
+                    <i class="fab fa-js"></i>                    
+                    <i class="fab fa-html5"></i>
+                    Sports e-commerce home
+                    <a href="https://enzotg.github.io/menusport/">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </p>
+                <p>
+                    <i class="fab fa-css3"></i>
+                    <i class="fab fa-js"></i>                    
+                    <i class="fab fa-html5"></i>
+                    Various slideshows
+                    <a href="https://github.com/enzotg/Slides/">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </p>                            
+                <p>
+                    <i class="fab fa-css3"></i>                    
+                    <i class="fab fa-html5"></i>
+                    This resumé
+                    <a href="https://github.com/enzotg/resume/">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </p>                    
+                <p>
+                    <span style="font-size: 1rem;font-weight: 900;">C#</span>                    
+                    Web Api Rest with DDD y CQRS 
+                    <a href="https://github.com/enzotg/Fondos">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </p>                
+
+                
+            </div>
+            <div>    
+                <p></p>            
+                
+                
+            </div>
+            <hr>
+            <h2>Tecnologies</h2>
+            <div class="cuadro-tec">
+                <div>ASP.NET core Web App MVC</div>
+                <div>ASP.NET core Web API</div>
+                <div>ASP.NET MVC</div>
+                <div>Winforms</div>
+                <div>WPF</div>
+                <div>Entity Framework</div>
+                <div>SQL</div>
+                <div>Crystal Reports</div>
+                <div>Reporting Services</div>
+                <div>javascript</div>
+                <div>html</div>
+                <div>css3</div>                
+            </div>
+
+            <div>
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <i class="fab fa-buffer"></i>
+                        <span>Programmer from Facultad de Ciencias Exactas - Universidad Nacional de Tucumán</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-buffer"></i>
+                        <span>Bachelor's degree in Computer Science from Facultad de Ciencias Exactas - Universidad Nacional de Tucumán</span>
+                    </li>
+    
+                </ul>    
+            </div>               
+        </div>
+
+        <div class="foot">
+            
+        </div>
+    </div>
+
+    
+</body>
+</html>
